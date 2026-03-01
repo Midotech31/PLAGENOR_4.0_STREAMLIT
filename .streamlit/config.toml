@@ -1,28 +1,10 @@
-# .streamlit/config.toml
-# ── PLAGENOR 4.0 — Streamlit Server Configuration ────────────────────────────
-
 [server]
-headless             = true
-port                 = 8501
-enableCORS           = false
+headless = true
+enableCORS = true
 enableXsrfProtection = true
-maxUploadSize        = 50
 
 [browser]
 gatherUsageStats = false
-serverAddress    = "localhost"
 
 [theme]
-primaryColor             = "#1ABC9C"
-backgroundColor          = "#F8FAFC"
-secondaryBackgroundColor = "#EBF5FB"
-textColor                = "#2C3E50"
-font                     = "sans serif"
-
-[runner]
-fastReruns   = true
-magicEnabled = false
-
-[logger]
-level         = "warning"
-messageFormat = "%(asctime)s %(levelname)s — %(name)s: %(message)s"
+base = "light"

@@ -7,7 +7,7 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from datetime import datetime, timedelta
+from datetime import datetime, timezone, timedelta
 
 import streamlit as st
 
@@ -291,7 +291,7 @@ def _init_session() -> None:
         "user_id":                  None,
         "login_attempts":           0,
         "login_error":              "",
-        "last_activity":            datetime.utcnow().isoformat(),
+        "last_activity":            datetime.now(timezone.utc).isoformat(),
         "notifications_checked_at": None,
     }
     for key, val in defaults.items():
@@ -300,7 +300,7 @@ def _init_session() -> None:
 
 
 def _update_activity() -> None:
-    st.session_state["last_activity"] = datetime.utcnow().isoformat()
+    st.session_state["last_activity"] = datetime.now(timezone.utc).isoformat()
 
 
 def _check_session_timeout() -> bool:
@@ -311,7 +311,7 @@ def _check_session_timeout() -> bool:
     if not last:
         return False
     try:
-        elapsed = (datetime.utcnow() - datetime.fromisoformat(last)).total_seconds()
+        elapsed = (datetime.now(timezone.utc) - datetime.fromisoformat(last)).total_seconds()
         timeout = getattr(config, "SESSION_TIMEOUT_SECONDS",
                           config.SESSION_TIMEOUT_MINUTES * 60)
         if elapsed > timeout:
@@ -505,7 +505,7 @@ def _process_login(username: str, password: str) -> None:
     st.session_state["user_id"]        = user["id"]
     st.session_state["login_attempts"] = 0
     st.session_state["login_error"]    = ""
-    st.session_state["last_activity"]  = datetime.utcnow().isoformat()
+    st.session_state["last_activity"]  = datetime.now(timezone.utc).isoformat()
 
     try:
         log_auth_event("LOGIN", username, success=True)
@@ -520,7 +520,7 @@ def _process_login(username: str, password: str) -> None:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def _render_notification_badge(user: dict) -> None:
-    now          = datetime.utcnow()
+    now          = datetime.now(timezone.utc)
     last_checked = st.session_state.get("notifications_checked_at")
     should_refresh = (
         last_checked is None
@@ -661,7 +661,7 @@ def _seed_default_admin() -> None:
         "email":           config.PLATFORM_EMAIL,
         "organization_id": None,
         "active":          True,
-        "created_at":      datetime.utcnow().isoformat(),
+        "created_at":      datetime.now(timezone.utc).isoformat(),
         "created_by":      "system",
         "note":            "Compte par défaut — changer le mot de passe immédiatement.",
     })
@@ -681,42 +681,42 @@ def _seed_default_services() -> None:
             "channel": config.CHANNEL_GENOCLAB,
             "description": "Séquençage complet du génome bactérien — Illumina",
             "base_price": 45_000.0, "code": "WGS-001", "active": True,
-            "created_at": datetime.utcnow().isoformat(), "created_by": "system",
+            "created_at": datetime.now(timezone.utc).isoformat(), "created_by": "system",
         },
         {
             "id": str(uuid.uuid4()), "name": "Identification Moléculaire (16S rRNA)",
             "channel": config.CHANNEL_GENOCLAB,
             "description": "Identification par séquençage 16S ARNr",
             "base_price": 12_000.0, "code": "ID-16S-001", "active": True,
-            "created_at": datetime.utcnow().isoformat(), "created_by": "system",
+            "created_at": datetime.now(timezone.utc).isoformat(), "created_by": "system",
         },
         {
             "id": str(uuid.uuid4()), "name": "Typage MLST",
             "channel": config.CHANNEL_GENOCLAB,
             "description": "Multi-Locus Sequence Typing bactérien",
             "base_price": 18_000.0, "code": "MLST-001", "active": True,
-            "created_at": datetime.utcnow().isoformat(), "created_by": "system",
+            "created_at": datetime.now(timezone.utc).isoformat(), "created_by": "system",
         },
         {
             "id": str(uuid.uuid4()), "name": "Analyse Résistome / ARGs",
             "channel": config.CHANNEL_GENOCLAB,
             "description": "Détection des gènes de résistance aux antibiotiques",
             "base_price": 25_000.0, "code": "RES-001", "active": True,
-            "created_at": datetime.utcnow().isoformat(), "created_by": "system",
+            "created_at": datetime.now(timezone.utc).isoformat(), "created_by": "system",
         },
         {
             "id": str(uuid.uuid4()), "name": "Analyse Génomique Comparative",
             "channel": config.CHANNEL_IBTIKAR,
             "description": "Projet de recherche — comparaison génomique multi-souches",
             "base_price": 80_000.0, "code": "IBT-GEN-001", "active": True,
-            "created_at": datetime.utcnow().isoformat(), "created_by": "system",
+            "created_at": datetime.now(timezone.utc).isoformat(), "created_by": "system",
         },
         {
             "id": str(uuid.uuid4()), "name": "Métagénomique Environnementale",
             "channel": config.CHANNEL_IBTIKAR,
             "description": "Analyse métagénomique de microbiomes environnementaux",
             "base_price": 100_000.0, "code": "IBT-META-001", "active": True,
-            "created_at": datetime.utcnow().isoformat(), "created_by": "system",
+            "created_at": datetime.now(timezone.utc).isoformat(), "created_by": "system",
         },
     ]
     for svc in defaults:
