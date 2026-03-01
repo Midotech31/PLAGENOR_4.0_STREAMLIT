@@ -1,0 +1,68 @@
+[
+  {
+    "id": "720216fe-4902-467c-b0f8-2b0d1b74a927",
+    "channel": "IBTIKAR",
+    "service_id": "s2",
+    "requester_id": "u5",
+    "organization_id": "ESSBO",
+    "status": "APPROVED",
+    "estimated_budget": 8000.0,
+    "approved_budget": 8000.0,
+    "override_justification": null,
+    "samples": [
+      {
+        "id": "6f7dc290-7041-42b2-b8d2-beff06833b16",
+        "request_id": "720216fe-4902-467c-b0f8-2b0d1b74a927",
+        "label": "",
+        "type": "Genomic DNA",
+        "status": "RECEIVED",
+        "received_at": "2026-02-27T17:09:43.414363",
+        "notes": ""
+      },
+      {
+        "id": "62abce02-5d90-4d21-a358-68eae189e106",
+        "request_id": "720216fe-4902-467c-b0f8-2b0d1b74a927",
+        "label": "",
+        "type": "Environmental Sample",
+        "status": "RECEIVED",
+        "received_at": "2026-02-27T17:09:47.367577",
+        "notes": ""
+      }
+    ],
+    "tasks": [
+      {
+        "id": "7775a180-ed72-4506-a607-c042b9370dd3",
+        "request_id": "720216fe-4902-467c-b0f8-2b0d1b74a927",
+        "title": "",
+        "assigned_to": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+        "status": "COMPLETED",
+        "created_at": "2026-02-27T17:08:18.109344",
+        "completed_at": "2026-02-27T17:10:03.720409",
+        "notes": ""
+      },
+      {
+        "id": "0c718ed8-3f8c-41be-ac2d-43571eec8377",
+        "request_id": "720216fe-4902-467c-b0f8-2b0d1b74a927",
+        "title": "Sequencing",
+        "assigned_to": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+        "status": "COMPLETED",
+        "created_at": "2026-02-27T17:08:55.639242",
+        "completed_at": "2026-02-27T17:10:09.565895",
+        "notes": ""
+      },
+      {
+        "id": "194c9a3a-e48a-4fd6-a5f5-4d5399b02e19",
+        "request_id": "720216fe-4902-467c-b0f8-2b0d1b74a927",
+        "title": "Sequencing",
+        "assigned_to": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+        "status": "COMPLETED",
+        "created_at": "2026-02-27T17:09:03.853399",
+        "completed_at": "2026-02-27T17:10:05.623267",
+        "notes": ""
+      }
+    ],
+    "archived": false,
+    "created_at": "2026-02-27T16:26:22.068088",
+    "updated_at": "2026-02-27T17:08:38.286704"
+  }
+]

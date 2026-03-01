@@ -39,6 +39,8 @@ data/backups/
 
 Passwords.txt
 smtp_credentials.txt
-data/*.json
-!data/.gitkeep
+data/backups/
+data/invoices_pdf/
+data/reports/
+data/uploads/
 *.txt

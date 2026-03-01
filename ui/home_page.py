@@ -1,7 +1,7 @@
 # ui/home_page.py
 # ── PLAGENOR 4.0 — Public Home / Landing Page ────────────────────────────────
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 import streamlit as st
 from werkzeug.security import check_password_hash   # ← FIX: replaced hashlib
@@ -271,7 +271,7 @@ def _process_login(username: str, password: str) -> None:
     st.session_state["authenticated"]  = True
     st.session_state["user"]           = user
     st.session_state["user_id"]        = user["id"]
-    st.session_state["last_activity"]  = datetime.utcnow().isoformat()
+    st.session_state["last_activity"]  = datetime.now(timezone.utc).isoformat()
     st.session_state["login_attempts"] = 0
     st.session_state.pop("_home_login_error", None)
     st.session_state.pop("_home_rendered",    None)

@@ -1,0 +1,666 @@
+[
+  {
+    "timestamp": "2026-02-27T16:24:31.364774",
+    "entity_type": "AUTH",
+    "entity_id": "u1",
+    "action": "LOGIN_SUCCESS",
+    "user_id": "u1",
+    "details": {
+      "username": "superadmin"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T16:24:31.807132",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u1",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T16:25:24.189471",
+    "entity_type": "AUTH",
+    "entity_id": "u1",
+    "action": "LOGOUT",
+    "user_id": "u1",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-02-27T16:25:48.383770",
+    "entity_type": "AUTH",
+    "entity_id": "u5",
+    "action": "LOGIN_SUCCESS",
+    "user_id": "u5",
+    "details": {
+      "username": "requester1"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T16:26:22.076124",
+    "entity_type": "REQUEST",
+    "entity_id": "720216fe-4902-467c-b0f8-2b0d1b74a927",
+    "action": "REQUEST_CREATED",
+    "user_id": "u5",
+    "details": {
+      "channel": "IBTIKAR",
+      "service_id": "s2",
+      "estimated_budget": 8000.0
+    }
+  },
+  {
+    "timestamp": "2026-02-27T16:26:33.275843",
+    "entity_type": "SAMPLE",
+    "entity_id": "6f7dc290-7041-42b2-b8d2-beff06833b16",
+    "action": "SAMPLE_ADDED",
+    "user_id": "u5",
+    "details": {
+      "label": "",
+      "type": "Genomic DNA"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T16:26:42.827202",
+    "entity_type": "SAMPLE",
+    "entity_id": "62abce02-5d90-4d21-a358-68eae189e106",
+    "action": "SAMPLE_ADDED",
+    "user_id": "u5",
+    "details": {
+      "label": "",
+      "type": "Environmental Sample"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T16:27:04.807808",
+    "entity_type": "AUTH",
+    "entity_id": "u5",
+    "action": "LOGOUT",
+    "user_id": "u5",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-02-27T16:27:22.502607",
+    "entity_type": "AUTH",
+    "entity_id": "u2",
+    "action": "LOGIN_SUCCESS",
+    "user_id": "u2",
+    "details": {
+      "username": "admin"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T16:27:22.946213",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T16:34:03.643733",
+    "entity_type": "AUTH",
+    "entity_id": "u2",
+    "action": "LOGIN_SUCCESS",
+    "user_id": "u2",
+    "details": {
+      "username": "admin"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T16:34:04.081199",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T16:35:03.557696",
+    "entity_type": "AUTH",
+    "entity_id": "u2",
+    "action": "LOGOUT",
+    "user_id": "u2",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-02-27T17:04:43.167520",
+    "entity_type": "AUTH",
+    "entity_id": "u2",
+    "action": "STAFF_LOGIN",
+    "user_id": "u2",
+    "details": {
+      "username": "admin"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:04:43.706223",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:06:33.602085",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:07:23.181212",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:07:23.184205",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:07:29.800226",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:07:29.804223",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:07:33.375254",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:07:33.379800",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:07:50.210002",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:07:50.213991",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:07:55.790558",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:07:55.794545",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:03.841589",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:03.844555",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:18.111454",
+    "entity_type": "TASK",
+    "entity_id": "7775a180-ed72-4506-a607-c042b9370dd3",
+    "action": "TASK_CREATED",
+    "user_id": "u2",
+    "details": {
+      "title": "",
+      "assigned_to": "312d2f99-3f33-4d18-8fc8-09d1fac1d762"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:18.546488",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:18.550480",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:33.990433",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:33.995442",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:38.288716",
+    "entity_type": "REQUEST",
+    "entity_id": "720216fe-4902-467c-b0f8-2b0d1b74a927",
+    "action": "STATUS_TRANSITION_TO_APPROVED",
+    "user_id": "u2",
+    "details": {
+      "from": "SUBMITTED",
+      "to": "APPROVED",
+      "channel": "IBTIKAR"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:38.292828",
+    "entity_type": "NOTIFICATION",
+    "entity_id": "u5",
+    "action": "NOTIFICATION_SENT",
+    "user_id": "u5",
+    "details": {
+      "subject": "Request 720216fe status updated",
+      "body": "Status changed: SUBMITTED \u2192 APPROVED",
+      "email": "none",
+      "email_sent": false,
+      "sent_at": "2026-02-27T17:08:38.292828"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:38.733678",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:38.736686",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:55.641236",
+    "entity_type": "TASK",
+    "entity_id": "0c718ed8-3f8c-41be-ac2d-43571eec8377",
+    "action": "TASK_CREATED",
+    "user_id": "u2",
+    "details": {
+      "title": "Sequencing",
+      "assigned_to": "312d2f99-3f33-4d18-8fc8-09d1fac1d762"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:56.075307",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:08:56.081108",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:09:03.853399",
+    "entity_type": "TASK",
+    "entity_id": "194c9a3a-e48a-4fd6-a5f5-4d5399b02e19",
+    "action": "TASK_CREATED",
+    "user_id": "u2",
+    "details": {
+      "title": "Sequencing",
+      "assigned_to": "312d2f99-3f33-4d18-8fc8-09d1fac1d762"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:09:04.287978",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:09:04.291643",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:09:06.046037",
+    "entity_type": "AUTH",
+    "entity_id": "u2",
+    "action": "LOGOUT",
+    "user_id": "u2",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-02-27T17:09:23.633968",
+    "entity_type": "AUTH",
+    "entity_id": "c9cb7af5-4546-43c4-95c1-0dbbd752f48e",
+    "action": "STAFF_LOGIN",
+    "user_id": "c9cb7af5-4546-43c4-95c1-0dbbd752f48e",
+    "details": {
+      "username": "Yasmine Zater"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:09:43.414363",
+    "entity_type": "SAMPLE",
+    "entity_id": "6f7dc290-7041-42b2-b8d2-beff06833b16",
+    "action": "SAMPLE_RECEIVED",
+    "user_id": "c9cb7af5-4546-43c4-95c1-0dbbd752f48e",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-02-27T17:09:47.367577",
+    "entity_type": "SAMPLE",
+    "entity_id": "62abce02-5d90-4d21-a358-68eae189e106",
+    "action": "SAMPLE_RECEIVED",
+    "user_id": "c9cb7af5-4546-43c4-95c1-0dbbd752f48e",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-02-27T17:10:03.724571",
+    "entity_type": "TASK",
+    "entity_id": "7775a180-ed72-4506-a607-c042b9370dd3",
+    "action": "TASK_COMPLETED",
+    "user_id": "c9cb7af5-4546-43c4-95c1-0dbbd752f48e",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-02-27T17:10:05.626275",
+    "entity_type": "TASK",
+    "entity_id": "194c9a3a-e48a-4fd6-a5f5-4d5399b02e19",
+    "action": "TASK_COMPLETED",
+    "user_id": "c9cb7af5-4546-43c4-95c1-0dbbd752f48e",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-02-27T17:10:09.569789",
+    "entity_type": "TASK",
+    "entity_id": "0c718ed8-3f8c-41be-ac2d-43571eec8377",
+    "action": "TASK_COMPLETED",
+    "user_id": "c9cb7af5-4546-43c4-95c1-0dbbd752f48e",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-02-27T17:10:32.952845",
+    "entity_type": "AUTH",
+    "entity_id": "u2",
+    "action": "STAFF_LOGIN",
+    "user_id": "u2",
+    "details": {
+      "username": "admin"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:10:33.405859",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:10:33.410844",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:11:37.260864",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:11:37.265397",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:11:37.275370",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_UPDATED",
+    "user_id": "u2",
+    "details": {
+      "old_score": 50.0,
+      "new_score": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:11:37.280357",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:11:38.014605",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:11:38.030867",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:11:38.041839",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_UPDATED",
+    "user_id": "u2",
+    "details": {
+      "old_score": 50.0,
+      "new_score": 50.0
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:11:38.046512",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:11:38.493174",
+    "entity_type": "MEMBER",
+    "entity_id": "m1",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 72.0,
+      "level": "ACTIVE"
+    }
+  },
+  {
+    "timestamp": "2026-02-27T17:11:38.497719",
+    "entity_type": "MEMBER",
+    "entity_id": "312d2f99-3f33-4d18-8fc8-09d1fac1d762",
+    "action": "PRODUCTIVITY_COMPUTED",
+    "user_id": "u2",
+    "details": {
+      "score": 50.0,
+      "level": "NORMAL"
+    }
+  }
+]

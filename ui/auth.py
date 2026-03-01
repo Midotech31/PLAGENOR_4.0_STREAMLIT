@@ -95,7 +95,7 @@ _PERMISSIONS: dict[str, set[str]] = {
 
 def _hash_pw(pw: str) -> str:
     """Hashes a plain-text password using Werkzeug (scrypt/pbkdf2)."""
-    return generate_password_hash(pw)
+    return generate_password_hash(pw, method="pbkdf2:sha256")
 
 
 def _verify_pw(plain: str, stored_hash: str) -> bool:

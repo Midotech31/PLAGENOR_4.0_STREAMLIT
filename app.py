@@ -345,7 +345,7 @@ def _logout(timeout: bool = False) -> None:
 
 def _hash_password(pw: str) -> str:
     """Hashes a password using Werkzeug (scrypt on Python 3.12)."""
-    return generate_password_hash(pw)
+    return generate_password_hash(pw, method="pbkdf2:sha256")
 
 
 def _verify_password(plain: str, stored_hash: str) -> bool:
