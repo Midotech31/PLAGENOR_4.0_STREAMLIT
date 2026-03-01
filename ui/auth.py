@@ -7,7 +7,7 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional, Union
 
 import streamlit as st
@@ -248,9 +248,8 @@ def require_role(
             st.stop()
         return None
 
-    st.session_state[_KEY_LAST_ACT] = datetime.utcnow().isoformat()
+    st.session_state[_KEY_LAST_ACT] = datetime.now(timezone.utc).isoformat()
     return user
-
 
 def require_roles(*allowed_roles: str) -> dict:
     """
