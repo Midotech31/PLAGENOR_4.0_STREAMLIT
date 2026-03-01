@@ -1,0 +1,44 @@
+# ── PLAGENOR 4.0 — Git Ignore ─────────────────────────────────────────────────
+
+# Environment
+.env
+*.env
+
+# Data (never commit live data)
+data/
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Generated files
+data/invoices_pdf/
+data/reports/
+data/uploads/
+data/backups/
+
+Passwords.txt
+smtp_credentials.txt
+data/*.json
+!data/.gitkeep
+*.txt
