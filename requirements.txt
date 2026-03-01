@@ -1,0 +1,15 @@
+streamlit>=1.40.0
+pandas
+numpy
+matplotlib
+plotly
+seaborn
+werkzeug
+python-docx
+reportlab
+Pillow
+openpyxl
+streamlit
+werkzeug
+python-dotenv
+pandas
