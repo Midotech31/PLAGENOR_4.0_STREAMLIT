@@ -656,7 +656,7 @@ def _seed_default_admin() -> None:
     save_user({
         "id":              str(uuid.uuid4()),
         "username":        "admin",
-        "password_hash":   generate_password_hash("plagenor2026"),  # ← FIX
+        "password_hash":   generate_password_hash("plagenor2026", method="pbkdf2:sha256"),  # ← FIX
         "role":            config.ROLE_SUPER_ADMIN,
         "email":           config.PLATFORM_EMAIL,
         "organization_id": None,
