@@ -2,7 +2,7 @@
   {
     "id": "u1",
     "username": "superadmin",
-    "password_hash": "scrypt:32768:8:1$25R0s8oF6WeovmiP$af424e91a36efbc1b3317982b29d1ba4804421e7a1aea59c57bd841437cc849a5003afc980cf05b475a4528cd1d82b281a2b038b110bca9e10a761ea14c272da",
+    "password_hash": "pbkdf2:sha256:1000000$P9bGtuYlos6w43DI$2b3427d5f587b51b6c66261648dffd16721d6d5fca16882a5d6f7d820f027492",
     "role": "SUPER_ADMIN",
     "organization_id": "ESSBO",
     "active": true,
@@ -13,7 +13,7 @@
   {
     "id": "u2",
     "username": "admin",
-    "password_hash": "scrypt:32768:8:1$CYlf6Dy4ZLDfOlIi$45ad46c5c4d33d7d13cace349ec6696ca3f25da5d0e7b6f83de4e49d8884fb7d9e97853e147b80aceed5ca14624a0aadb2de483328678ccc19103818df0fbbf1",
+    "password_hash": "pbkdf2:sha256:1000000$xCsPYgCvsqw1viM0$48408f26f3264a4b7bddb509d67812aefc09672966c8771facc75420e18995a0",
     "role": "PLATFORM_ADMIN",
     "organization_id": "ESSBO",
     "active": true,
@@ -24,7 +24,7 @@
   {
     "id": "u3",
     "username": "finance1",
-    "password_hash": "scrypt:32768:8:1$OgdfQqBxQaUdAfG6$f53c76aa23493af5a9221b49ee9c6166089bcb35c2a11a7a3e3af2e248bbe77dd616aeda149d6e1156d72b5e1850188c5e6845a4cc2ee57c0bb67d7f5cf121d7",
+    "password_hash": "pbkdf2:sha256:1000000$i8RedFvvsITtCIH6$e0a62d2e785808b62a640e57f78fbca1ee8071c2fd3a72d53a5ff0fbd3e744b2",
     "role": "FINANCE",
     "organization_id": "ESSBO",
     "active": true,
@@ -35,7 +35,7 @@
   {
     "id": "u4",
     "username": "member1",
-    "password_hash": "scrypt:32768:8:1$XGTmLvsZv1gTtT9A$7deaa51ad98bafccff4e70c0e301a166f228af4e0d71284290182c99885008858053a6547008e9a36539ba8f639b5cd11751db5b42cd3aaf1e819d66ff03b0d9",
+    "password_hash": "pbkdf2:sha256:1000000$AleQeviU7mHsjbCl$3489d0a9f1f687283ec34d6c67aa60640ca88950154068a1b317504ff354c711",
     "role": "MEMBER",
     "organization_id": "ESSBO",
     "active": true,
@@ -46,7 +46,7 @@
   {
     "id": "u5",
     "username": "requester1",
-    "password_hash": "scrypt:32768:8:1$0JrwoXuoYEfd3FHV$0d3a53bdac74dff1d6a942ec6866e223c0bb58c53332222a220133b263a3b7a0b857beac0621347ab52f992864564f398ea38699b7c7fb250fd0cc76897e2ab6",
+    "password_hash": "pbkdf2:sha256:1000000$SQjzDPn9kUBm3f09$9b68986d4befe568acd45a05747e1371a1482e8f13c2196a8b66e98b097d4494",
     "role": "REQUESTER",
     "organization_id": "ESSBO",
     "active": true,
@@ -57,7 +57,7 @@
   {
     "id": "u6",
     "username": "client1",
-    "password_hash": "scrypt:32768:8:1$dF5UKUBGlbpqwve0$5fc956e36c62200c7e15f6b9ef83bf1e3a04639a64a62386153c152fc82eb85016831298c0ed6f93ca73bea6452ab0e748ea7beb86cf1a72203895973cb93243",
+    "password_hash": "pbkdf2:sha256:1000000$9T698FPsUEL3ZbA4$d840cdeb683c79dab41ce5d3046dcc50c3e50e26f28d6d536338a200e47313d2",
     "role": "CLIENT",
     "organization_id": "ESSBO",
     "active": true,
@@ -68,7 +68,7 @@
   {
     "id": "c9cb7af5-4546-43c4-95c1-0dbbd752f48e",
     "username": "yasmine.zater",
-    "password_hash": "scrypt:32768:8:1$UeA1Q3EJTlB1k1Bm$63d01bcebcfc53e9ca3a96af482419f8c08f68dec1dad03df748ee9906724ce548c275438c6e661aff4c29294ba72cca7fbf8493f676c3ce4396b975397f4d06",
+    "password_hash": "pbkdf2:sha256:1000000$74BUBfX8DTj0Uiif$020e2b219bce909e3db837326eec1d0a23d9f3529089f34393d6a276b642dce2",
     "role": "MEMBER",
     "organization_id": "PLAGENOR",
     "active": true,
