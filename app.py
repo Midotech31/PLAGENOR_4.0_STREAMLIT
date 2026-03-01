@@ -10,18 +10,31 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from datetime import datetime, timedelta
 
 import streamlit as st
-from werkzeug.security import generate_password_hash, check_password_hash  # ← FIX
 
-import config
-from core.repository import (
-    ensure_data_directory,
-    get_user_by_username,
-    get_user,
-    get_unread_notifications_for_user,
-    mark_all_notifications_read_for_user,
-    get_member_by_user_id,
-)
-from core.audit_engine import log_auth_event
+# Safe import block to debug Cloud issues
+try:
+    from werkzeug.security import generate_password_hash, check_password_hash  # ← FIX
+
+    import config
+    from core.repository import (
+        ensure_data_directory,
+        get_user_by_username,
+        get_user,
+        get_unread_notifications_for_user,
+        mark_all_notifications_read_for_user,
+        get_member_by_user_id,
+    )
+    from core.audit_engine import log_auth_event
+
+    init_error = None
+except Exception as e:
+    init_error = str(e)
+
+# If imports failed, show the error and stop
+if init_error:
+    st.write("INIT ERROR:")
+    st.code(init_error)
+    st.stop()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
