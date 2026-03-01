@@ -41,7 +41,7 @@ from core.productivity_engine import (
     recalculate_all,
     recalculate_member,
 )
-from core.financial_engine      import set_request_quote
+from core.financial_engine import set_quote_amount
 from services.document_service  import generate_report_docx, generate_invoice_pdf
 from core.exceptions            import PlagenorError
 

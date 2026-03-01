@@ -1276,3 +1276,22 @@ def generate_report_docx(
         pass
 
     return path
+
+def set_quote_amount(request_id: str, amount: float, user: dict) -> dict:
+    """Set the quote amount for a GENOCLAB request."""
+    from core.repository import get_request, save_request
+    req = get_request(request_id)
+    if not req:
+        from core.exceptions import EntityNotFoundError
+        raise EntityNotFoundError(f"Request {request_id} not found.")
+    req["quote_amount"] = float(amount)
+    req["updated_at"] = datetime.utcnow().isoformat()
+    save_request(req)
+    log_action(
+        action="QUOTE_AMOUNT_SET",
+        entity_type="REQUEST",
+        entity_id=request_id,
+        actor=user,
+        details={"quote_amount": amount},
+    )
+    return req

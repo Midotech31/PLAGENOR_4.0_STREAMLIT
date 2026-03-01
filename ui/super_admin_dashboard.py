@@ -104,7 +104,8 @@ def _action_err(e: Exception) -> None:
 
 
 def _hash_password(pw: str) -> str:
-    return hashlib.sha256(pw.encode()).hexdigest()
+    from werkzeug.security import generate_password_hash
+    return generate_password_hash(pw)
 
 
 # ── Data loaders ──────────────────────────────────────────────────────────────
